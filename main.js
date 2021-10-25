@@ -10,11 +10,10 @@ let cl = document.querySelector(".close");
 
 
 ic.addEventListener("click", function(){
-  hb.className = hb.classList + " active";
+  hb.classList.add("active");
 });
 
 
 cl.addEventListener("click", function(){
-  hb.className = hb.classList - " active";
-  hb.className = hb.classList + " hamburger-menu";
+  hb.classList.remove("active");
 });
